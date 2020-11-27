@@ -275,7 +275,8 @@ namespace ams::fuse {
         out->ecid[3] = static_cast<u32>(vendor);
     }
 
-    u64 GetDeviceId() {
+    u64 GetDeviceId()  {
+    	return 0x006531A15C67FE03;
         /* Get the registers. */
         volatile auto &chip = GetChipRegistersCommon();
 
